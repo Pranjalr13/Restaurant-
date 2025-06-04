@@ -1,0 +1,223 @@
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mamma Mia!</title>
+  <style>
+    :root {
+      --primary-color: #8B0000;
+      --secondary-color: #111;
+      --accent-color: #FF0000;
+      --light-color: #fefefe;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--secondary-color);
+      color: var(--light-color);
+    }
+
+    header {
+      background: var(--primary-color);
+      text-align: center;
+      padding: 40px 20px;
+      background-image: url('https://images.unsplash.com/photo-1541544741938-0af808871cc0');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.2em;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 12px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      padding: 8px 16px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--accent-color);
+    }
+
+    section {
+      margin: 40px auto;
+      max-width: 1000px;
+      background: #1a1a1a;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 10px;
+      color: var(--accent-color);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.1em;
+    }
+
+    form input, form select, form textarea, form button {
+      display: block;
+      margin: 12px 0;
+      padding: 12px;
+      width: 100%;
+      font-size: 1em;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background-color: #222;
+      color: white;
+    }
+
+    form button {
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #cc0000;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #ff3333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      nav a {
+        display: block;
+        margin: 8px auto;
+        width: fit-content;
+      }
+      section {
+        margin: 20px 16px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mamma Mia!</h1>
+  <p>Where every bite tells a story.</p>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#events">Events</a>
+    <a href="#reservation">Reservations</a>
+  </nav>
+</header>
+
+<section id="menu">
+  <h2>Our Signature Menu</h2>
+  <img src="menubg.jpg" alt="Menu Image">
+  <ul>
+    <li><strong>Grilled Salmon</strong> - Served with roasted vegetables - ₹399</li>
+    <li><strong>Classic Cheeseburger</strong> - With fries and a drink - ₹299</li>
+    <li><strong>Vegan Buddha Bowl</strong> - Quinoa, chickpeas, veggies - ₹350</li>
+    <li><strong>Truffle Pasta</strong> - Creamy truffle sauce and mushrooms - ₹450</li>
+    <li><strong>BBQ Baby Back Ribs</strong> - Slow-cooked with tangy BBQ sauce - ₹480</li>
+    <li><strong>Margherita Pizza</strong> - Fresh basil and mozzarella - ₹270</li>
+    <li><strong>Chicken Tikka Masala</strong> - With jasmine rice - ₹430</li>
+    <li><strong>Caesar Salad</strong> - Romaine, parmesan, house dressing - ₹260</li>
+    <li><strong>Seafood Paella</strong> - Shrimp, mussels, saffron rice - ₹495</li>
+    <li><strong>Chocolate Lava Cake</strong> - Molten center, vanilla ice cream - ₹199</li>
+  </ul>
+  <a href="menu.png">See full menu...</a>
+</section>
+
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <img src="event.png" alt="Event Image">
+  <p>Join us for evenings filled with flavor and flair!</p>
+  <ul>
+    <li><strong>Live Jazz Night</strong> - Every Friday from 7 PM</li>
+    <li><strong>Wine Tasting</strong> - First Saturday of the month</li>
+    <li><strong>Chef's Special Evening</strong> - Monthly seasonal showcase</li>
+  </ul>
+</section>
+
+<section id="reservation">
+  <h2>Make a Reservation</h2>
+  <p>Reserve your seat today and enjoy an unforgettable dining experience.</p>
+  <form>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email Address" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <input type="date" required />
+    <input type="time" required />
+    <select required>
+      <option value="">Party Size</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5+">5+</option>
+    </select>
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Mamma Mia! | Crafted with passion and plated with pride
+</footer>
+
+</body>
+</html>
